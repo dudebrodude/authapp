@@ -15,6 +15,10 @@ html {
   overflow-y: scroll;
 }
 
+body {
+  background:#111;
+}
+
 section {
   overflow: auto;
 }
@@ -41,7 +45,7 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
-}
+ }
 
 h2 {
   font-size: 1.2em;
@@ -63,12 +67,10 @@ p {
 #logo {
   float: left;
   margin-right: 10px;
-  font-size: 1.7em;
+  font: 1.9em 'Arial';
   color: white;
-  text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
-  font-weight: bold;
   line-height: 1;
   &:hover {
     color: white;
@@ -139,7 +141,7 @@ aside {
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
-  margin-bottom: 15px;
+
  
 }
 
@@ -150,4 +152,19 @@ input {
 .gravatar {
   float: left;
   margin-right: 10px;
+}
+
+.jumbotron{
+  background:#171717;
+  h1{
+    color:#777;
+  
+ }
+ h2{
+  color:#666;
+ }
+}
+
+.navbar-inverse{
+  background:#171717;
 }
