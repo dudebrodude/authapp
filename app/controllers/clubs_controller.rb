@@ -10,6 +10,10 @@ class ClubsController < ApplicationController
   # GET /clubs/1
   # GET /clubs/1.json
   def show
+     @hash = Gmaps4rails.build_markers(@club) do |club, marker|
+    marker.lat club.latitude
+    marker.lng club.longitude
+end
   end
 
   # GET /clubs/new
@@ -69,6 +73,6 @@ class ClubsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def club_params
-      params.require(:club).permit(:index, :show)
+      params.require(:club).permit(:name, :phone, :address)
     end
 end
