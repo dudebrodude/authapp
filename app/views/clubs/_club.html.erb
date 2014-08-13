@@ -1,6 +1,7 @@
-<li class="list-group-item">
-  <%= gravatar_for user, size: 52 %>
-  <%= link_to user.name, user %>
+<li>
+    <p><%= link_to club.name, club %></p>
+     <p><%= number_to_phone(club.phone, area_code: true) %></p>
+          <p><%= club.address %></p>
   <% if current_user.admin? && !current_user?(user) %>
     | <%= link_to "delete", user, method: :delete,
                                   data: { confirm: "You sure?" } %>
