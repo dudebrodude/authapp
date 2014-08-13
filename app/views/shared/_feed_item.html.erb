@@ -2,9 +2,12 @@
   <div class="panel-heading">
 <li id="<%= feed_item.id %>">
   <%= link_to gravatar_for(feed_item.user, size: 40), feed_item.user %>
-  <span class="user">
+  <p class="user">
     <%= link_to feed_item.user.name, feed_item.user %>
-  </span>
+  </p>
+  <p class="location">
+    <%= feed_item.user.location %>
+  </p>
   </div>
   <div class="panel-body">
   <span class="content"><%= feed_item.content %></span>
