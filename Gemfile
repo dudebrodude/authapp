@@ -29,7 +29,7 @@ gem 'bcrypt-ruby', '3.1.2'
 gem 'bootstrap_form'
 gem 'faker', '1.1.2'
 gem 'will_paginate', '3.0.4'
-gem 'bootstrap-will_paginate', '0.0.9'
+gem 'will_paginate-bootstrap'
 gem 'geocoder'
 gem 'gmaps4rails'
 
