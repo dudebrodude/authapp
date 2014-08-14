@@ -4,7 +4,6 @@ namespace :db do
     make_users
     make_microposts
     make_relationships
-    make_clubs
   end
 end
 
@@ -44,16 +43,4 @@ def make_relationships
   followed_users.each { |followed| user.follow!(followed) }
   followers.each      { |follower| follower.follow!(user) }
 end
-
-def make_clubs
-    99.times do |n|
-    name  = Faker::Company.name
-    phone = Faker::PhoneNumber.cell_phone
-    address = Faker::Address.street_address
-    Club.create!(name:     name,
-                 phone:    phone,
-                 address: address)
-  end
-end
-
 end
