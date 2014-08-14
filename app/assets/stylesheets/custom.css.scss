@@ -42,7 +42,7 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
- }
+}
 
 h2 {
   font-size: 1.2em;
@@ -112,7 +112,7 @@ footer {
 /* sidebar */
 
 aside {
-    section {
+  section {
     padding: 10px;
     border-top: 1px solid #999;
     
@@ -168,7 +168,7 @@ input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
 
- 
+  
 }
 
 input {
@@ -239,7 +239,7 @@ input {
   .user{
     margin-top:-9px;
   }
-    .location{
+  .location{
     font-size: 0.85em;
     margin-top: -12px;
     margin-bottom:-7px;
@@ -264,4 +264,7 @@ aside {
     margin-bottom: 5px;
   }
 }
-
+.panel-header{
+ font: 1.3em 'Arial';
+ margin: 0;
+}

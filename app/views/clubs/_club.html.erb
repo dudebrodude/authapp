@@ -1,9 +1,18 @@
 <li>
-    <p><%= link_to club.name, club %></p>
+<div class="panel panel-default">
+<div class="panel-heading">
+    <p class="panel-header"><%= link_to club.name, club %></p>
+    </div>
+    <div class="panel-body">
      <p><%= number_to_phone(club.phone, area_code: true) %></p>
           <p><%= club.address %></p>
   <% if current_user.admin? && !current_user?(user) %>
     | <%= link_to "delete", user, method: :delete,
                                   data: { confirm: "You sure?" } %>
   <% end %>
+  </div>
+  <div class="panel-footer">
+Add Club
+  </div>
+</div>
 </li>
