@@ -1,29 +1,14 @@
 <% provide(:title, 'All Clubs') %>
 <div class="row">
   <div class="col-sm-4">
-    <div class="panel panel-default">
-      <!-- Default panel contents -->
-      <div class="panel-heading">
-        <h3 class="panel-header">Search Clubs</h3>
-      </div>
-      <div class="panel-body">
-        <table class="table">
-          ...
-        </table>
-      </div>
-    </div>
+
   </div>
   <div class="col-sm-8">
-
-        <h3 class="list-header">Listing Clubs</h3>
-      
-      
-        <%= render 'paginate_clubs' %>
-        <ul class="users list-group">
-          <%= render @clubs %>
-        </ul>
-      
-      <%= render 'paginate_clubs' %>
-
-</div>
+    <h3 class="list-header">Listing Clubs</h3>
+    <%= render 'paginate_clubs' %>
+    <ul class="users list-group">
+      <%= render @clubs %>
+    </ul>
+    <%= render 'paginate_clubs' %>
+  </div>
 </div>

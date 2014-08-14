@@ -1,0 +1,12 @@
+
+<h3 class="club-name">
+  <%= @club.name %>
+</h3>
+<p class="club-info">
+<%= fa_icon 'phone' %>	<%= number_to_phone(@club.phone, area_code: true) %>  
+</p>
+<p>
+<%= fa_icon 'building-o' %>	<%= @club.address %>  
+</p>
+
+
