@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title><%= full_title(yield(:title)) %></title>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<%= stylesheet_link_tag "application", media: "all",
 	"data-turbolinks-track" => true %>
 	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -67,12 +68,12 @@
 								<li><%= link_to "Settings", edit_user_path(current_user) %></li>
 								<li class="divider"></li>
 								<li>
-									<%= link_to "Sign out", signout_path, method: "delete" %>
+									<%= link_to  "Sign out", signout_path, method: "delete" %>
 								</li>
 							</ul>
 						</li>
 						<% else %>
-						<li><%= link_to "Sign in", signin_path %></li> 
+						<li><%= fa_icon 'home' %> <%= link_to "Sign in", signin_path %></li> 
 						<li><%= link_to "Register", signup_path %></li>
 						<% end %>
 					</ul>

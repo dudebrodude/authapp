@@ -32,6 +32,7 @@ gem 'will_paginate', '3.0.4'
 gem 'will_paginate-bootstrap'
 gem 'geocoder'
 gem 'gmaps4rails'
+gem 'font-awesome-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

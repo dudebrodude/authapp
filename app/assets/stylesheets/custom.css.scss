@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import "rails_bootstrap_forms";
+@import "spacing";
 
 /* mixins, variables, etc. */
 
@@ -264,7 +265,14 @@ aside {
     margin-bottom: 5px;
   }
 }
+.list-header{
+  font:1.3em 'Arial';
+  margin:0;
+}
 .panel-header{
  font: 1.3em 'Arial';
  margin: 0;
+}
+.club-info{
+  margin-bottom:0;
 }
