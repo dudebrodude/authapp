@@ -5,7 +5,7 @@
       <h1>
         <%= gravatar_for @user %>
         <%= @user.name %> 
-        <span class="h6"><%= @user.location %></span>
+        <span class="h6"><%= fa_icon 'globe' %> <%= @user.location %></span>
       </h1>
     </section>
         <section>
