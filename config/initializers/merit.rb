@@ -22,6 +22,7 @@ end
 # Create application badges (uses https://github.com/norman/ambry)
 Merit::Badge.create!({
   id: 1,
-  name: 'just-registered'
+  name: 'just-registered',
+  custom_fields: { img_url: '/images/new.png' }
 })
  
