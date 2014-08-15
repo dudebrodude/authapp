@@ -33,6 +33,10 @@ gem 'will_paginate-bootstrap'
 gem 'geocoder'
 gem 'gmaps4rails'
 gem 'font-awesome-rails'
+gem 'paperclip', github: 'thoughtbot/paperclip'
+
+
+
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
