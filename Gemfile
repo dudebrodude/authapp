@@ -34,6 +34,7 @@ gem 'geocoder'
 gem 'gmaps4rails'
 gem 'font-awesome-rails'
 gem 'paperclip', github: 'thoughtbot/paperclip'
+gem 'merit'
 
 
 

@@ -5,6 +5,11 @@
 <span>
 <%= fa_icon 'globe' %>	<%= current_user.location %>  
 </span>
+    <ul>
+<% current_user.badges.each do |badge| %>
+  <li><%= badge.name %></li>
+<% end %>
+</ul>
 <span>
   <%= link_to "view my profile", current_user %>
 </span>
