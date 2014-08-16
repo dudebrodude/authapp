@@ -1,8 +1,6 @@
-<div class="panel panel-default">
-<div class="panel-heading">
-<%= fa_icon 'bar-chart-o' %> Point Balance
-</div>
-<div class="panel-body">
+
+<%= fa_icon 'bar-chart-o' %><strong> Point Balance:</strong>
+
 <%= current_user.points %>
-</div>
-</div>
+
+<%= link_to "Redeem Points", root_path, class:"btn btn-primary" %>
