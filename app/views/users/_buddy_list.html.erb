@@ -10,5 +10,7 @@
         </div>
                   <%= link_to "View All", following_user_path(current_user), class:"btn btn-primary" %>
         <% else %>
-        You haven't added anyone to your list yet! 
+        <p>
+        You aren't following anyone yet! 
+      </p>
       <% end %>
