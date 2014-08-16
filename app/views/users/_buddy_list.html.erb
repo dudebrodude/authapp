@@ -1,14 +1,14 @@
 <strong>Following</strong> (<%= current_user.followed_users.count %> total)
       <% if @users.any? %>
         <div class="user_avatars">
-          <% @users.each do |user| %>
-            <div class="buddy-list"><%= link_to gravatar_for(user, size: 30), user %><%= user.name %>
+          <% @users.limit(5).each do |user| %>
+            <div class="buddy-list"><%= link_to gravatar_for(user, size: 30), user %><%= link_to user.name, user %>
             </div>
      
           <% end %>
 
         </div>
-                  <%= link_to "View All People", root_path, class:"btn btn-primary" %>
+                  <%= link_to "View All", root_path, class:"btn btn-primary" %>
         <% else %>
         You haven't added anyone to your list yet! 
       <% end %>
