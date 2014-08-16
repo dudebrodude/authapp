@@ -114,21 +114,21 @@ footer {
 
 aside {
   padding:5px;
-  background:#f8f8f8;
   border:solid 1px #e7e7e7;
   border-radius:3px;
 
   section {
-    padding: 10px 0;
+    padding: 10px;
     border-top: 1px solid #e7e7e7;
+          margin-left:-10px;
+      margin-right:-10px;
     
     &:first-child {
       border: 0;
       border-radius: 3px 3px 0 0;
-      background:#e7e7e7;
+      background:#f8f8f8;
       padding: 5px;
-      margin-left:-10px;
-      margin-right:-10px;
+
     }
     span {
       display: block;
@@ -268,12 +268,7 @@ input {
   border-radius:3px;
 
 }
-aside {
-  textarea {
-    height: 100px;
-    margin-bottom: 5px;
-  }
-}
+
 .list-header{
   font:1.3em 'Arial';
   margin:0;
@@ -294,4 +289,7 @@ aside {
 }
 .float-right{
   float:right;
+}
+.ml10{
+  margin-left:10px;
 }
