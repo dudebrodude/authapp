@@ -12,7 +12,7 @@
   <div class="panel-body">
   <span class="content"><%= feed_item.content %></span>
   <span class="timestamp">
-    <%= time_ago_in_words(feed_item.created_at) %> ago.
+    <%= fa_icon 'clock-o' %> <%= time_ago_in_words(feed_item.created_at) %> ago
   </span>
     <% if current_user?(feed_item.user) %>
     <%= link_to "delete", feed_item, method: :delete,
