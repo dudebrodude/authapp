@@ -120,9 +120,7 @@ aside {
   section {
     padding: 10px;
     border-top: 1px solid #e7e7e7;
-          margin-left:-10px;
-      margin-right:-10px;
-    
+    margin: -5px -15px 5px;
     &:first-child {
       border: 0;
       border-radius: 3px 3px 0 0;
@@ -260,6 +258,7 @@ input {
 }
 .timestamp {
   color: $grayLight;
+  float:right;
 }
 .gravatar {
   float: left;
