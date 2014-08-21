@@ -6,12 +6,12 @@
         <%= gravatar_for @user %>
         <%= @user.name %> 
         <span class="h6"><%= fa_icon 'globe' %> <%= @user.location %></span>
+        <span class="h6">
+<%= fa_icon 'edit' %> Check-ins: <%= current_user.checkins.count %>  
+</span>
       </h1>
-      <p>
-        <% @user.badges.each do |badge| %>
-        <%= fa_icon 'shield' %> <%= badge.name %>
-        <% end %>
-      </p>
+
+
     </section>
     <section>
       <%= render 'shared/stats' %>
