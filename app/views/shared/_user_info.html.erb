@@ -3,9 +3,9 @@
   <%= link_to current_user.name, current_user %>
 </h1>
 <span>
-<%= fa_icon 'globe' %>	<%= current_user.location %>  
+<%= fa_icon 'map-marker' %>	<%= current_user.location %>  
 </span>
 <span>
-<%= fa_icon 'edit' %> Check-ins: <%= current_user.checkins.count %>  
+<%= fa_icon 'check-circle' %> Check-ins: <%= current_user.checkins.count %>  
 </span>
 
