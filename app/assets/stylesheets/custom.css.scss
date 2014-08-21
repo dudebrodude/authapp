@@ -120,13 +120,7 @@ aside {
   section {
     padding: 10px;
     border-top: 1px solid #e7e7e7;
-
     margin: -5px -15px 5px;
-
-    margin-left:-15px;
-    margin-right:-15px;
-    margin-top:-5px;
-    
     &:first-child {
       border: 0;
       border-radius: 3px 3px 0 0;
@@ -218,7 +212,7 @@ input {
   margin: 0;
   .user{
     margin-bottom:0;
-    font-weight:bold;
+ 
   }
   li {
     overflow: auto;

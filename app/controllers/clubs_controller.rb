@@ -1,11 +1,12 @@
 class ClubsController < ApplicationController
   before_action :set_club, only: [:show, :edit, :update, :destroy]
+  has_scope :featured, :type => :boolean
 
   # GET /clubs
   # GET /clubs.json
   def index
       @clubs = Club.paginate(page: params[:page])
-  end
+     end
 
   # GET /clubs/1
   # GET /clubs/1.json
