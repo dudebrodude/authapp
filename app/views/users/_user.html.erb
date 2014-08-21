@@ -6,6 +6,7 @@
 	<p class="location">
 		<%= fa_icon 'globe' %> <%= user.location %>
 	</p>
+	<%= link_to 'View User', user, class: "btn btn-primary" %> 
 	<% if current_user.admin? && !current_user?(user) %>
 	| <%= link_to "delete", user, method: :delete,
 	data: { confirm: "You sure?" } %>

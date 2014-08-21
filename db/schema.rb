@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140815202847) do
+ActiveRecord::Schema.define(version: 20140821042125) do
 
   create_table "badges_sashes", force: true do |t|
     t.integer  "badge_id"
@@ -23,6 +23,17 @@ ActiveRecord::Schema.define(version: 20140815202847) do
   add_index "badges_sashes", ["badge_id", "sash_id"], name: "index_badges_sashes_on_badge_id_and_sash_id"
   add_index "badges_sashes", ["badge_id"], name: "index_badges_sashes_on_badge_id"
   add_index "badges_sashes", ["sash_id"], name: "index_badges_sashes_on_sash_id"
+
+  create_table "checkins", force: true do |t|
+    t.string   "title"
+    t.integer  "club_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "checkins", ["club_id"], name: "index_checkins_on_club_id"
+  add_index "checkins", ["user_id"], name: "index_checkins_on_user_id"
 
   create_table "clubs", force: true do |t|
     t.string   "name"

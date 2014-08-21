@@ -3,7 +3,10 @@
 <p id="notice"><%= notice %></p>
 <div class="row">
 <aside class="col-sm-3">
-	<section>
+<section>
+<%= link_to 'Check in', new_checkin_path, class: "btn btn-primary" %>
+</section>
+<section>
 <%= render 'clubinfo' %>
 </section>
 <section>

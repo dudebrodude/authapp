@@ -1,7 +1,7 @@
 # Use this hook to configure merit parameters
 Merit.setup do |config|
   # Check rules on each request or in background
-  config.checks_on_each_request = true
+  #config.checks_on_each_request = true
 
   # Define ORM. Could be :active_record (default) and :mongoid
   config.orm = :active_record
@@ -23,6 +23,5 @@ end
 Merit::Badge.create!({
   id: 1,
   name: 'just-registered',
-  custom_fields: { img_url: '/images/new.png' }
 })
  
