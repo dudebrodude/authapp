@@ -5,17 +5,16 @@ class ClubsController < ApplicationController
   # GET /clubs
   # GET /clubs.json
   def index
-      @clubs = Club.paginate(page: params[:page])
-     end
+    @clubs = Club.paginate(page: params[:page])
+  end
 
   # GET /clubs/1
   # GET /clubs/1.json
   def show
-    
-     @hash = Gmaps4rails.build_markers(@club) do |club, marker|
-    marker.lat club.latitude
-    marker.lng club.longitude
-end
+    @hash = Gmaps4rails.build_markers(@club) do |club, marker|
+      marker.lat club.latitude
+      marker.lng club.longitude
+    end
   end
 
   # GET /clubs/new
@@ -31,7 +30,6 @@ end
   # POST /clubs.json
   def create
     @club = Club.new(club_params)
-
     respond_to do |format|
       if @club.save
         format.html { redirect_to @club, notice: 'Club was successfully created.' }
@@ -77,4 +75,4 @@ end
     def club_params
       params.require(:club).permit(:name, :phone, :address)
     end
-end
+  end

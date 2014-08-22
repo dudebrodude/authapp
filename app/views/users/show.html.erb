@@ -7,16 +7,16 @@
         <%= @user.name %> 
         <span class="h6"><%= fa_icon 'globe' %> <%= @user.location %></span>
         <span class="h6">
-<%= fa_icon 'edit' %> Check-ins: <%= current_user.checkins.count %>  
-</span>
+          <%= fa_icon 'edit' %> Check-ins: <%= current_user.checkins.count %>  
+        </span>
       </h1>
-
-
     </section>
     <section>
       <%= render 'shared/stats' %>
     </section>
-    <%= render 'follow_form' if signed_in? %>
+    <section>
+      <%= render 'follow_form' if signed_in? %>
+    </section>
   </aside>
   <div class="col-sm-8">
     <% if @user.microposts.any? %>
