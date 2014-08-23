@@ -33,10 +33,9 @@ gem 'will_paginate-bootstrap'
 gem 'geocoder'
 gem 'gmaps4rails'
 gem 'font-awesome-rails'
-gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'merit'
 gem 'has_scope'
-gem 'dragonfly', '~> 1.0.5'
+gem 'dragonfly', '~> 1.0.6'
 
 
 
