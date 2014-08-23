@@ -1,13 +1,12 @@
 <li>
-
-     <%= link_to club.name, club %>
-    
-   
-      <p class="club-info"><%= fa_icon 'phone' %> <%= number_to_phone(club.phone, area_code: true) %></p>
-     <p><%= fa_icon 'home' %> <%= club.address %></p>
+<div class="col-md-2"><%= image_tag club.image.url(:thumb) %></div>
+<div class="col-md-10">
+    <p class="club-info"> <%= link_to club.name, club %></p>
+    <p class="club-info">     <%= fa_icon 'phone' %> <%= number_to_phone(club.phone, area_code: true) %> </P>
+    <p> <%= fa_icon 'home' %> <%= club.address %></p>
      <% if current_user.admin? && !current_user?(user) %>
      | <%= link_to "delete", user, method: :delete,
      data: { confirm: "You sure?" } %>
      <% end %>
-
+</div>
 </li>

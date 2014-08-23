@@ -17,7 +17,13 @@
 	</div>
 	<div class="col-sm-9">
 		<%= render 'paginate_users' %>
-		<h3 class="list-header">Listing Users</h3>
+		    <div class="dropdown">
+  <a data-toggle="dropdown" href="#">Sort By <%= fa_icon 'angle-down' %></a>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+   Popularity<br>
+   Newest
+  </ul>
+</div>
 		<ul class="users list-group">
 			<%= render @users %>
 		</ul>
