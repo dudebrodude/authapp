@@ -36,6 +36,7 @@ gem 'font-awesome-rails'
 gem 'merit'
 gem 'has_scope'
 gem 'dragonfly', '~> 1.0.6'
+gem 'paperclip', github: 'thoughtbot/paperclip'
 
 
 
