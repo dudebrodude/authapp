@@ -1,6 +1,8 @@
 SampleApp::Application.routes.draw do
   resources :photos
 
+  resources :photos
+
   resources :checkins
 
     resources :users do

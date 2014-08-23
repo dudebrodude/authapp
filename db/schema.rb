@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140823055725) do
+ActiveRecord::Schema.define(version: 20140823103738) do
 
   create_table "badges_sashes", force: true do |t|
     t.integer  "badge_id"
@@ -96,6 +96,10 @@ ActiveRecord::Schema.define(version: 20140823055725) do
     t.datetime "updated_at"
     t.string   "image_name"
     t.string   "image_uid"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   create_table "relationships", force: true do |t|
