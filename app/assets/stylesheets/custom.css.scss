@@ -2,6 +2,7 @@
 @import "rails_bootstrap_forms";
 @import "spacing";
 
+
 /* mixins, variables, etc. */
 
 $grayMediumLight: #eaeaea;
@@ -15,6 +16,10 @@ $grayLighter: #eee;
 
 html {
   overflow-y: scroll;
+background-color:#0c0c0c;
+}
+body{
+  background-color:#0c0c0c;
 
 }
 
@@ -297,4 +302,73 @@ input {
 }
 .ml10{
   margin-left:10px;
+}
+.jumbotron{
+  background-color:#151515;
+}
+ #welcome-logo{
+    font: 1.6em 'Trebuchet MS';
+    letter-spacing: -2px;
+ }
+ .panel-dark {
+    background: none repeat scroll 0 0 #151515;
+    border-color: #1f1f1f;
+    border-style: solid;
+    border-width: 1px;
+    border-radius:3px;
+    margin-bottom: 1.25rem;
+    padding: 1.25rem;
+    color:#c4c4c4;
+}
+.welcome{
+  margin-top:40px;
+}
+.login {
+    font: 1.6em 'Trebuchet MS';
+    margin-top: -5px;
+    color:#999;
+}
+.continue{
+      font: 1.6em 'Trebuchet MS';
+    color:#999;
+}
+.havent-signed {
+    font: 1.6em 'Trebuchet MS';
+    color:#999;
+    margin-top:-5px;
+}
+.mb10{
+  margin-bottom: 10px;
+}
+.panel {
+   background:#151515;
+    border: 1px solid #1f1f1f;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+.panel-heading {
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 10px 15px;
+}
+.panel-body{
+  background:#151515;
+  border:solid 1px #1f1f1f;
+}
+.p0{
+  padding:0;
+}
+.feat-head{
+   font: 1.3em 'Arial';
+   color:#777;
+   text-align: center;
+
+}
+.welcome-head{
+   font: 1.3em 'Arial';
+   color:#777;
+   
+
 }

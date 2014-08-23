@@ -1,0 +1,6 @@
+    <%= bootstrap_form_for(:session, url: sessions_path) do |f| %>
+       <%= f.text_field :email, hide_label: :true, placeholder: "Email"  %>
+      <%= f.password_field :password, hide_label: :true, placeholder: "Password"  %>
+      <%= f.submit "Submit", class: "btn btn-primary" %>
+    <% end %>
+ 

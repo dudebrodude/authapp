@@ -1,0 +1,63 @@
+<div class="row welcome">
+  <div class="col-sm-12">
+          <div class="panel">
+
+  <div class="panel-body">
+  <div class="col-sm-7">
+    <h4><%= link_to image_tag('4.png') + "Feedstreem", root_path, id: "welcome-logo" %><h4>
+    <h4 class="continue">Please Login or Register to continue</h4>
+  </div>
+    <div class="col-sm-5 mb10">
+    <h3 class="login"><%= fa_icon 'sign-in' %> Login</h3>
+    <%= render 'sessions/new' %>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<h3 class="havent-signed">New to Feedstreem?</h3>
+</div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <div class="panel">
+  <div class="panel-heading">
+    <h3 class="panel-title feat-head">Free Drinks</h3>
+  </div>
+  <div class="panel-body">
+    <%= image_tag 'panel1.jpg' %>
+    <h4 class="feature-header"></h4>
+     <p class="feature-subject">Earn points for stuff like free drinks!</p>
+  </div>
+</div>
+
+  </div>
+  <div class="col-md-4">
+        <div class="panel">
+  <div class="panel-heading">
+    <h3 class="panel-title feat-head">Front of Line Passes</h3>
+  </div>
+  <div class="panel-body">
+    <%= image_tag 'panel2.jpg' %>
+    <h4 class="feature-header"></h4>
+    <p class="feature-subject">Get to the front of the line fast</p>
+  </div>
+
+  </div>
+</div>
+  <div class="col-md-4">
+            <div class="panel">
+  <div class="panel-heading">
+    <h3 class="panel-title feat-head">... And Much More</h3>
+  </div>
+  <div class="panel-body">
+   <%= image_tag 'panel3.jpg' %>
+   <h4 class="feature-header"></h4>
+   <p class="feature-subject">You'll be acting like a crazy whore in no time!</p>
+  </div>
+
+  </div>
+</div>
+ </div>
