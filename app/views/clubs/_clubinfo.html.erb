@@ -1,12 +1,12 @@
-
+<div class="col-sm-4 avatars"> <%= image_tag @club.image.url(:thumb) %></div>
 <h3 class="club-name">
   <%= @club.name %>
 </h3>
-<p class="club-info">
+<p class="info">
 <%= fa_icon 'phone' %>	<%= number_to_phone(@club.phone, area_code: true) %>  
 </p>
-<p>
-<%= fa_icon 'building-o' %>	<%= @club.address %>  
+<p class="info">
+<%= fa_icon 'home' %><%= @club.address %>  
 </p>
 
-
+ 

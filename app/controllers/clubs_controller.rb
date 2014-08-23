@@ -75,4 +75,11 @@ class ClubsController < ApplicationController
     def club_params
       params.require(:club).permit(:name, :phone, :address, :image)
     end
+      def sort_popular
+   @clubs =  Club.all.order('clubs.created_at DESC')
+  end
+  
+  def sort_direction
+    %w[asc desc].include?(params[:direction]) ? params[:direction] : "asc"
+  end
   end

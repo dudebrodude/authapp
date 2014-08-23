@@ -1,23 +1,10 @@
 <% provide(:title, 'All Clubs') %>
 <div class="row">
-  <div class="col-sm-3">
-  <div class="panel panel-default">
-    <div class="panel-heading p5">
-      <%= fa_icon 'search' %> Search Clubs
-    </div>
-    <div class="panel-body">
-   </div>
-</div>
-  </div>
+  <aside class="col-sm-3">
+<%= render 'clubfinder' %>
+  </aside>
   <div class="col-sm-9">
-    <div class="dropdown">
-  <a data-toggle="dropdown" href="#">Sort By <%= fa_icon 'angle-down' %></a>
-  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-   Distance<br>
-   Popularity<br>
-   Newest
-  </ul>
-</div>
+<%= render 'sort' %>
     <%= render 'paginate_clubs' %>
     <ul class="users list-group">
       <%= render @clubs %>
@@ -26,4 +13,3 @@
   </div>
 </div>
 
-<%= link_to 'New', new_club_path %>

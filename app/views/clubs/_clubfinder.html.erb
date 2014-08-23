@@ -1,0 +1,12 @@
+    		<p class="mb5"> <%= fa_icon 'building' %> Club Finder </p>
+     <%= form_tag("/search", method: "get") do %>
+     <%= text_field_tag(:q) %>
+     <%= submit_tag("Search By Name") %>
+     <% end %>
+  		<p class="center"> or </p>
+  		<%= form_tag("/search", method: "get") do %>
+  		<%= text_field_tag(:q) %>
+  		<%= submit_tag("City, State, ZIP") %>
+  		<% end %>
+
+
