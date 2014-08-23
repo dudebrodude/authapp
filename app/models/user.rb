@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  has_many :photos, as: :imageable
   has_merit
   has_many :checkins
   has_many :microposts, dependent: :destroy
