@@ -1,15 +1,8 @@
-<div class="panel panel-default">
-  <div class="panel-heading">
+
     <li id="<%= feed_item.id %>">
-      <%= link_to gravatar_for(feed_item.user, size: 40), feed_item.user %>
       <p class="user">
-       <strong><%= link_to feed_item.user.name, feed_item.user %></strong>
+       <%= link_to feed_item.user.name, feed_item.user %>
      </p>
-     <p class="location">
-      <%= fa_icon 'globe' %> <%= feed_item.user.location %>
-    </p>
-  </div>
-  <div class="panel-body">
     <span class="content"><%= feed_item.content %></span>
     <span class="timestamp">
       <%= fa_icon 'clock-o' %> <%= time_ago_in_words(feed_item.created_at) %> ago
@@ -20,5 +13,3 @@
     title: feed_item.content %>
     <% end %>
   </li>
-</div>
-</div>

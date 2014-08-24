@@ -1,11 +1,11 @@
 <%= link_to gravatar_for(current_user, size: 52), current_user %>
-<h1>
-  <%= link_to current_user.name, current_user %>
+<h1 class="c4">
+  <%= current_user.name %>
 </h1>
-<span>
+<span class="c5">
 <%= fa_icon 'map-marker' %>	<%= current_user.location %>  
 </span>
-<span>
+<span class="c5">
 <%= fa_icon 'check-circle' %> Check-ins: <%= current_user.checkins.count %>  
 </span>
 

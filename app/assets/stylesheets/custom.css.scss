@@ -69,9 +69,9 @@ p {
 /* header */
 
 #logo {
-  color: #5a5a5a;
+  color: #a2a2a2;
   float: left;
-  font: 2.1em 'Arial';
+  font: 1.75em 'Arial';
   letter-spacing: -2px;
   margin-right: 10px;
   padding-top: 9px;
@@ -118,18 +118,19 @@ footer {
 /* sidebar */
 
 aside {
+  background: #151515;
   padding:5px;
-  border:solid 1px #e7e7e7;
+  border:solid 1px #1f1f1f;
   border-radius:3px;
 
   section {
     padding: 10px;
-    border-top: 1px solid #e7e7e7;
+    border-top: 1px solid #1f1f1f;
     margin: -5px -15px 5px;
     &:first-child {
       border: 0;
       border-radius: 3px 3px 0 0;
-      background:#f8f8f8;
+      background:#1f1f1f;
       padding: 5px;
 
     }
@@ -233,7 +234,7 @@ input {
 
 .microposts {
   list-style: none;
-  margin: 10px 0 0 0;
+     margin-left: -35px;
 
   li {
     padding: 10px 0;
@@ -385,4 +386,21 @@ input {
    text-align: center;
    margin-top: -5px;
 
+}
+.navbar-default {
+    background-color: #151515;
+    border-color: #1f1f1f;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: #0e0e0e;
+    color: #8a8a8a;
+}
+.c4{
+  color:#c4c4c4;
+}
+.c5{
+  color:#555;
+}
+.user-sidebar{
+  margin-top:-19px;
 }

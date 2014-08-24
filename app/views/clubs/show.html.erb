@@ -2,10 +2,8 @@
 <script src='//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js' type='text/javascript'></script>
 <p id="notice"><%= notice %></p>
 <div class="row">
-	<aside class="col-sm-4">
-		<section>
-			<%= render 'checkins/new_checkin' %>
-		</section>
+	<aside class="col-sm-3">
+
 				<section>
 			<%= render 'clubinfo' %>
 		</section>
@@ -14,9 +12,15 @@
 		</section>
 		<section>
 		
+			
+<%= link_to 'Get Directions', root_path %>
+
+
+		
 	</section>
 
 	</aside>
+	 <%= image_tag @club.image.url(:thumb) %>
 </div>
 <%= link_to 'Edit', edit_club_path(@club) %> |
 <%= link_to 'Back', clubs_path %>
