@@ -1,5 +1,9 @@
 <% if @feed_items.any? %>
-  <ol class="microposts">
-  	  <%= render partial: 'shared/feed_item', collection: @feed_items %>
-    </ol>
+<ol class="microposts">
+	<%= render partial: 'shared/feed_item', collection: @feed_items %>
+</ol>
+<% else %>
+Recent posts from people and/or clubs on your favorites list will appear here.
+Start searching for <%= link_to 'Clubs', clubs_path %>  or for <%= link_to 'People', users_path %> now,
+and start enjoying Streemfeed!
 <% end %>
